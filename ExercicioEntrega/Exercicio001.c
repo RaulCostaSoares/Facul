@@ -5,7 +5,7 @@ int main(){
 
     setlocale(LC_ALL,"");
 
-    printf("\"A dúvida é o princípio da sabedoria.\" (Aristóteles)");
+    printf("\"A dúvida é o princípio da sabedoria.\" (Aristóteles)\n");
 
     return 0;
 }
