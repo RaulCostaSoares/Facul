@@ -8,7 +8,7 @@ int main(){
     scanf("%d", &b);
     scanf("%d", &c);
     media = (a + b + c) / 3;
-    printf("A media é:%d", media);
-
+    printf("A media e:%d", media);
+    // printf("%d %d %d", a, b, c);
     return 0;
 }
