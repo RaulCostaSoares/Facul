@@ -1,14 +1,27 @@
 #include <stdio.h>
+#include <math.h>>
 
 int main(){
 
-    int a, b, c, media;
+    double a, b, c, ma, mh, mg, mp;
 
-    scanf("%d", &a);
-    scanf("%d", &b);
-    scanf("%d", &c);
-    media = (a + b + c) / 3;
-    printf("A media e:%d", media);
-    // printf("%d %d %d", a, b, c);
+    scanf("%lf", &a);
+    scanf("%lf", &b);
+    scanf("%lf", &c);
+    // 
+    ma = (a + b + c) / 3;
+    // 
+    mh = 3/((1/a)+(1/b)+(1/c));
+    // 
+    mg = cbrt(a*b*c);
+    // 
+    mp = ((1*a)+(2*b)+(3*c))/(1+2+3);
+    // 
+    printf("%.4lf\n", ma);
+    printf("%.4lf\n", mh);
+    printf("%.4lf\n", mg);
+    printf("%.4lf\n", mp);
+
+
     return 0;
 }
