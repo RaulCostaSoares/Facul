@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>>
+#include <math.h>
 
 int main(){
 
@@ -21,7 +21,6 @@ int main(){
     printf("%.4lf\n", mh);
     printf("%.4lf\n", mg);
     printf("%.4lf\n", mp);
-
 
     return 0;
 }
