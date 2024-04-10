@@ -8,7 +8,10 @@ int main() {
 
     scanf("%d", &ang);
 
-    if (ang > 360 || ang < -360) {
+    if (ang >= 360 || ang <= -360) {
+        if(ang<0){
+            ang = ang*(-1);
+        }
         voltas = ang / 360;
     } else {
         voltas = 0;
@@ -19,7 +22,7 @@ int main() {
     while (ang < -360) {
         ang = ang + 360;
     }
-    if (ang == 0 || ang == 180 || ang == -180 || ang == 360 || ang == -360 || ang == 90 || ang == 90 || ang == 270 || ang == -270) {
+    if (ang == 0 || ang == 180 || ang == -180 || ang == 360 || ang == -360 || ang == 90 || ang == -90 || ang == 270 || ang == -270) {
         quad = 0;
     } else if (ang > 0) {
         if (ang < 90) {

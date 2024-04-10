@@ -41,6 +41,11 @@ int main(){
             r1 = a;
         }
         
+    } else if(a==b && b==c){
+
+        r1=a;
+        r2=b;
+        r3=c;
     }
 
     printf("%.4lf\n", r1);

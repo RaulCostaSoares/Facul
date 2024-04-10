@@ -117,7 +117,6 @@ int main(){
         }
     }
     
-    printf("%d\n", i);
     printf("%.4lf\n", r1);
     printf("%.4lf\n", r2);
     printf("%.4lf", r3);

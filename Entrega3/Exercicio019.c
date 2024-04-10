@@ -13,7 +13,7 @@ int main(){
     } else if(i>=8 && i<=10){
         printf("Juvenil");
     } else if(i>=11 && i<=15){
-        printf("Adolescenet");
+        printf("Adolescente");
     } else if(i>=16 && i<=30){
         printf("Adulto");
     } else if(i>30){
