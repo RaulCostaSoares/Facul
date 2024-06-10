@@ -2,10 +2,12 @@
 
 int main(){
 
-    int x ;
-    double y = 2.12;
+    int x = 2;
+    double y = 200.1, out;
 
-    printf("%f %.2f", x, y);
+    out = x*y;
+
+    printf("%d", out);
 
 
     return 0;
