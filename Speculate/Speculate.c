@@ -12,6 +12,9 @@ int main(){
     while(1){
         scanf("%d", &jogadas);
         if(jogadas<=bolasJogador){
+            // int r = rand() % 6 + 1;
+            // printf("%d",r);
+            // fazer funcao que de um numero aleatorio de 1 a 6
             break;
         }
         printf("MENOR QUE %d VEZEZ\n", bolasJogador);
