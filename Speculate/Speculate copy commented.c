@@ -55,8 +55,8 @@ void criaPos(int pos[], int bolasBuraco){
 
 }
 
-void situation(char *nomeJogador, int bolasJogador, int bolasMaquina, int r[]){
-// /*
+void situation(char *nomeJogador, int bolasJogador, int bolasMaquina/*, int r[]*/){
+/*
     for(int i=0;i,6;i++){
         if(r[i] == 1){
             dado[i] = "|X|";
@@ -64,7 +64,7 @@ void situation(char *nomeJogador, int bolasJogador, int bolasMaquina, int r[]){
             dado[i] = "| |";
         }
     }
-// */
+*/
 
     printf(" ______________________________________________________________________________________________________________\n");
     printf("|                                  |                                   |         %s   %s   %s                   |\n"/*, dado[0], dado[1], dado[2]*/);
@@ -113,7 +113,7 @@ void jogadorJoga(char *nomeJogador){
                 limparTerminal();
                 criaSpec();
                 criaPos(pos, bolasBuraco);
-                situation(nomeJogador, bolasJogador, bolasMaquina, r);
+                situation(nomeJogador, bolasJogador, bolasMaquina/*, r*/);
                 printf("Resultado do dado: %d\n",r);
                 for (int i = 0; i < 5; i++) {
                     printf("%d ", pos[i]);
@@ -158,7 +158,7 @@ void maquinaJoga(){
             limparTerminal();
             criaSpec();
             criaPos(pos, bolasBuraco);
-            situation(nomeJogador, bolasJogador, bolasMaquina, r);
+            situation(nomeJogador, bolasJogador, bolasMaquina/*, r*/);
             
             printf("Resultado do dado: %d\n",r);
             for (int i = 0; i < 5; i++) {
