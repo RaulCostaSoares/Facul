@@ -28,6 +28,7 @@ void limparTerminal() {
         system("clear");
     #endif
 }
+
 int rolar_dado() {
     return (rand() % 6) + 1;
 }
@@ -53,7 +54,7 @@ void criaPos(int pos[], int bolasBuraco){
     printf("|                                                                                                /  /          |\n");
     printf("|_______________________________________________________________________________________________/  /___________|\n");
     printf("|                                                                                                              |\n");
-    printf("|                                                   %02d                                                         |\n", bolasBuraco);
+    printf("|                                                   %d                                                          |\n", bolasBuraco);
     printf("|______________________________________________________________________________________________________________|\n");
 
 }
