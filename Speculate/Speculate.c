@@ -139,7 +139,7 @@ void situation(char *nomeJogador, int bolasJogador, int bolasMaquina, int r){
     printf("|                                  |                                   |          | %s       %s |            |\n", dadio[0], dadio[1]);
     printf("|   Jogador: %s            |   Oponente: Maquina               |          |               |            |\n", nomeJogador);
     printf("|                                  |                                   |          | %s  %s  %s |            |\n", dadio[2], dadio[3], dadio[4]);
-    printf("|   Bolas na possuidas: %02d         |   Bolas na possuidas: %02d          |          |               |            |\n", bolasJogador, bolasMaquina);
+    printf("|   Bolas   possuidas: %02d         |   Bolas   possuidas: %02d          |          |               |            |\n", bolasJogador, bolasMaquina);
     printf("|                                  |                                   |          | %s       %s |            |\n", dadio[5], dadio[6]);
     printf("|__________________________________|___________________________________|_______________________________________|\n\n");
 
@@ -149,7 +149,7 @@ void situation(char *nomeJogador, int bolasJogador, int bolasMaquina, int r){
 void jogadorJoga(char *nomeJogador){
     
     // pergunta o nome
-    printf("Joragas quantas vezes?\n");
+    printf("Jogar quantas vezes?\n");
     printf("Maximo de %d vezes\n", bolasJogador);
     
     while(1){
