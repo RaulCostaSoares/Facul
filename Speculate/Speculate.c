@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
-// #include <unistd.h>
+// #include <unistd.h>  biblioteca caso necessario adicionar um tempo entre cada jogada da maquina
 
 int bolas = 33;
 int bolasJogador = 15;
