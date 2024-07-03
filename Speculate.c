@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
-// #include <unistd.h>
+#include <unistd.h>
 
 int bolas = 33;
 int bolasJogador = 15;
-int bolasMaquina = 15;
+int bolasMaquina = 1;
 int bolasBuraco = 0;
 int pontuacao = 0;
-int valTab[8] = {0};
+int praTabela[8] = {0};
 char nomeTab[8][20];
 //            0 1 2 3 4 
 int pos[5] = {1,0,1,0,1};
@@ -242,7 +242,7 @@ void roboGanha(char *nomeJogador, int pontuacao) {
     char nomes[100][10];
     int pontuacoes[100];
 
-    int valTab[8] = {0};      // Valores dos players salvos
+    int praTabela[8] = {0};      // Valores dos players salvos
     char nomeTab[8][10] = {{0}}; // Nome dos players salvos
 
     myFile = fopen("tabela.txt", "r"); //abrindo arquivo pra LEITURA
@@ -257,14 +257,14 @@ void roboGanha(char *nomeJogador, int pontuacao) {
         
         // armazena os 8 menoes        
         for (int j = 0; j < 8; j++) {
-            if (valTab[j] == 0 || pontuacoes[i] < valTab[j]) {
+            if (praTabela[j] == 0 || pontuacoes[i] < praTabela[j]) {
                 // desloca pra frente
                 for (int k = 7; k > j; k--) {
-                    valTab[k] = valTab[k - 1];
+                    praTabela[k] = praTabela[k - 1];
                     strcpy(nomeTab[k], nomeTab[k - 1]);
                 }
                 // adiciona a informação pro j atual
-                valTab[j] = pontuacoes[i];
+                praTabela[j] = pontuacoes[i];
                 strcpy(nomeTab[j], nomes[i]);
                 break;
             }
@@ -275,13 +275,13 @@ void roboGanha(char *nomeJogador, int pontuacao) {
     fclose(myFile);
 
     printf(" _________________________________________________________________    ___________________________________________________\n");
-    printf("|                _             _                    _             |  |  1->  %-10s: %02d   |  2->  %-10s: %02d     |\n", nomeTab[0], valTab[0], nomeTab[1], valTab[1]);
+    printf("|                _             _                    _             |  |  1->  %-10s: %02d   |  2->  %-10s: %02d     |\n", nomeTab[0], praTabela[0], nomeTab[1], praTabela[1]);
     printf("|               | |           | |                  (_)            |  |________________________|__________________________|\n");
-    printf("|   _ __   ___  | |__    ___  | |_     __      __ _  _ __   ___   |  |  3->  %-10s: %02d   |  4->  %-10s: %02d     |\n", nomeTab[2], valTab[2], nomeTab[3], valTab[3]);
+    printf("|   _ __   ___  | |__    ___  | |_     __      __ _  _ __   ___   |  |  3->  %-10s: %02d   |  4->  %-10s: %02d     |\n", nomeTab[2], praTabela[2], nomeTab[3], praTabela[3]);
     printf("|  | '__| / _ \\ | '_ \\  / _ \\ | __|    \\ \\ /\\ / /| || '_ \\ / __|  |  |________________________|__________________________|\n");
-    printf("|  | |   | (_) || |_) || (_) || |_      \\ V  V / | || | | |\\__ \\  |  |  5->  %-10s: %02d   |  6->  %-10s: %02d     |\n", nomeTab[4], valTab[4],nomeTab[5], valTab[5]);
+    printf("|  | |   | (_) || |_) || (_) || |_      \\ V  V / | || | | |\\__ \\  |  |  5->  %-10s: %02d   |  6->  %-10s: %02d     |\n", nomeTab[4], praTabela[4],nomeTab[5], praTabela[5]);
     printf("|  |_|    \\___/ |_.__/  \\___/  \\__|      \\_/\\_/  |_||_| |_||___/  |  |________________________|__________________________|\n");
-    printf("|_________________________________________________________________|  |  7->  %-10s: %02d   |  8->  %-10s: %02d     |\n", nomeTab[6], valTab[6], nomeTab[7], valTab[7]);
+    printf("|_________________________________________________________________|  |  7->  %-10s: %02d   |  8->  %-10s: %02d     |\n", nomeTab[6], praTabela[6], nomeTab[7], praTabela[7]);
     printf(" _________________________________________________________________   |________________________|__________________________|\n");
     printf("|                                                                 |  |                                                   |\n");
     printf("|           Infelizmente %s voce perdeu                   |  |                %s:  %02d                    |\n", nomeJogador, nomeJogador, pontuacao);
@@ -296,7 +296,7 @@ void jogadorGanha(char *nomeJogador, int pontuacao){
     char nomes[100][10];
     int pontuacoes[100];
 
-    int valTab[8] = {0};      // Valores dos players salvos
+    int praTabela[8] = {0};      // Valores dos players salvos
     char nomeTab[8][10] = {{0}}; // Nome dos players salvos
 
     myFile = fopen("tabela.txt", "a"); //abrindo arquivo pra ESCRITA
@@ -316,14 +316,14 @@ void jogadorGanha(char *nomeJogador, int pontuacao){
         
         //armazena os 8 menoes        
         for (int j = 0; j < 8; j++) {
-            if (valTab[j] == 0 || pontuacoes[i] < valTab[j]) {
+            if (praTabela[j] == 0 || pontuacoes[i] < praTabela[j]) {
                 //desloca pra frente
                 for (int k = 7; k > j; k--) {
-                    valTab[k] = valTab[k - 1];
+                    praTabela[k] = praTabela[k - 1];
                     strcpy(nomeTab[k], nomeTab[k - 1]);
                 }
                 //adiciona a informação pro j atual
-                valTab[j] = pontuacoes[i];
+                praTabela[j] = pontuacoes[i];
                 strcpy(nomeTab[j], nomes[i]);
                 break;
             }
@@ -334,13 +334,13 @@ void jogadorGanha(char *nomeJogador, int pontuacao){
     fclose(myFile);
 
     printf(" _________________________________________________________________    ___________________________________________________\n");
-    printf("|     _   _   ___   _   _                     _                   |  |  1->  %-10s: %02d   |  2->  %-10s: %02d     |\n", nomeTab[0], valTab[0], nomeTab[1], valTab[1]);
+    printf("|     _   _   ___   _   _                     _                   |  |  1->  %-10s: %02d   |  2->  %-10s: %02d     |\n", nomeTab[0], praTabela[0], nomeTab[1], praTabela[1]);
     printf("|    | | | | / _ \\ | | | |                   (_)                  |  |________________________|__________________________|\n");
-    printf("|    | |_| || (_) || |_| |        __      __ _  _ __   ___        |  |  3->  %-10s: %02d   |  4->  %-10s: %02d     |\n", nomeTab[2], valTab[2], nomeTab[3], valTab[3]);
+    printf("|    | |_| || (_) || |_| |        __      __ _  _ __   ___        |  |  3->  %-10s: %02d   |  4->  %-10s: %02d     |\n", nomeTab[2], praTabela[2], nomeTab[3], praTabela[3]);
     printf("|     \\__, | \\___/  \\__,_|        \\ \\ /\\ / /| || '_ \\ /  __|      |  |________________________|__________________________|\n");
-    printf("|      __/ |                       \\ V  V / | || | | |\\__ \\       |  |  5->  %-10s: %02d   |  6->  %-10s: %02d     |\n", nomeTab[4], valTab[4],nomeTab[5], valTab[5]);
+    printf("|      __/ |                       \\ V  V / | || | | |\\__ \\       |  |  5->  %-10s: %02d   |  6->  %-10s: %02d     |\n", nomeTab[4], praTabela[4],nomeTab[5], praTabela[5]);
     printf("|     |___/                         \\_/\\_/  |_||_| |_||___/       |  |________________________|__________________________|\n");
-    printf("|_________________________________________________________________|  |  7->  %-10s: %02d   |  8->  %-10s: %02d     |\n", nomeTab[6], valTab[6], nomeTab[7], valTab[7]);
+    printf("|_________________________________________________________________|  |  7->  %-10s: %02d   |  8->  %-10s: %02d     |\n", nomeTab[6], praTabela[6], nomeTab[7], praTabela[7]);
     printf(" _________________________________________________________________   |________________________|__________________________|\n");
     printf("|                                                                 |  |                                                   |\n");
     printf("|           Parabens %s!       voce ganhou                |  |                %s:  %02d                    |\n", nomeJogador, nomeJogador, pontuacao);
@@ -352,12 +352,12 @@ int main(){
     srand(time(NULL));
     pontuacao = 0;
 
-    // Questiona sobre o nome e adapta o tamanho
-    printf("Digite seu nome ate 10 caracteres\n");
+    // questiona sobre o nome e adapta o tamanho
+    printf("Qual seu nome?");
     scanf("%s",nomeJogador);
     completa(nomeJogador);
     
-    // Verificação para ver se o jogo continua   
+    //Verificação para ver se o jogo continua   
     while(bolasJogador != 0 && bolasMaquina != 0){
         jogadorJoga(nomeJogador);
             pontuacao++;
@@ -371,6 +371,6 @@ int main(){
     } else {
         roboGanha(nomeJogador, pontuacao);
     }
-
+    
     return 0;
 }

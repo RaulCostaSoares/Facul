@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
-// #include <unistd.h>
+#include <unistd.h>
 
 int bolas = 33;
-int bolasJogador = 15;
-int bolasMaquina = 15;
+int bolasJogador = 1;
+int bolasMaquina = 1;
 int bolasBuraco = 0;
 int pontuacao = 0;
 int valTab[8] = {0};
@@ -196,7 +196,7 @@ void maquinaJoga(){
 
     for(int i=0;i<bolasMaquina;i++){
             
-        // sleep(1);          // delay de 1 segundo para a maquina
+         sleep(1);          // delay de 1 segundo para a maquina
 
         int r = rolar_dado();    //rolagem de dados
         

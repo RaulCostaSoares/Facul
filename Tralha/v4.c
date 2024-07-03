@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
-// #include <unistd.h>
+#include <unistd.h>
 
 int bolas = 33;
-int bolasJogador = 15;
+int bolasJogador = 1;
 int bolasMaquina = 15;
 int bolasBuraco = 0;
 int pontuacao = 0;
-int valTab[8] = {0};
+int praTabela[8] = {0};
 char nomeTab[8][20];
 //            0 1 2 3 4 
 int pos[5] = {1,0,1,0,1};
@@ -139,35 +139,44 @@ void situation(char *nomeJogador, int bolasJogador, int bolasMaquina, int r){
     printf("|                                  |                                   |          | %s       %s |            |\n", dadio[0], dadio[1]);
     printf("|   Jogador: %s            |   Oponente: Maquina               |          |               |            |\n", nomeJogador);
     printf("|                                  |                                   |          | %s  %s  %s |            |\n", dadio[2], dadio[3], dadio[4]);
-    printf("|   Bolas na possuidas: %02d         |   Bolas na possuidas: %02d          |          |               |            |\n", bolasJogador, bolasMaquina);
+    printf("|   Bolas na possuidas: %d         |   Bolas na possuidas: %d          |          |               |            |\n", bolasJogador, bolasMaquina);
     printf("|                                  |                                   |          | %s       %s |            |\n", dadio[5], dadio[6]);
-    printf("|__________________________________|___________________________________|_______________________________________|\n\n");
+    printf("|__________________________________|___________________________________|_______________________________________|\n");
 
 
 }
 
 void jogadorJoga(char *nomeJogador){
     
-    // pergunta o nome
     printf("Joragas quantas vezes?\n");
     printf("Maximo de %d vezes\n", bolasJogador);
     
     while(1){
         scanf("%d", &jogadas);
-        if(jogadas<=bolasJogador){       // verifica se a quantidade selecionada é aceitavel/menor que o que carrega
-            for(int i=0;i<jogadas;i++){  // para cada jogada espera confirmar o lançamento
+        if(jogadas<=bolasJogador){
+            for(int i=0;i<jogadas;i++){
 
                 printf("Deseja jogar o dado?(enter/n)");
                 scanf("%s", s);
-                
-                // nao tem muita utilidade, caso der enter em um "n" ele vai repitir ate ser enviado qualquer digito que nao seja "n"
-                while(strcmp(s, "n")==0){
-                    scanf("%s", s);
+
+                // while(strcmp(s, "n")==0){
+                    // scanf("%s", s);
+                // }
+
+                while(1){
+                    fgets(s, sizeof(s), stdin);
+                    if(s[strlen(s)-1]=='\n'){
+                        s[strlen(s)-1]='\0';
+                    }
+                    if(strlen(s) ==0){
+                        break;
+                    }
+                    
                 }
 
-                int r = rolar_dado();    //rolagem de dados
 
-                // verifica de acordo com a posição se devera recolher ou adicionar da posição, definindo se aumentara a quantidade de bolas carregadas ou não
+                int r = rolar_dado();
+
                 if(r>=1 && r<=5){
                     if(pos[r-1] == 1){
                         bolasJogador++;
@@ -181,49 +190,73 @@ void jogadorJoga(char *nomeJogador){
                     bolasJogador--;
                 }
 
-                limparTerminal();        // Limpa o terminal para ser impresso o jogo
-                criaSpec();              // Escreve em ASCII o nome do jogo
-                criaPos(pos, bolasBuraco); // Desenha a situação das posições
-                situation(nomeJogador, bolasJogador, bolasMaquina, r); // mostra o valor do dado, seu nome e a quantidade de bolas possuidas
+                limparTerminal();
+                criaSpec();
+                criaPos(pos, bolasBuraco);
+                // printf("Resultado do dado: %d\n",r);
+                // for (int i = 0; i < 5; i++) {
+                    // printf("%d ", pos[i]);
+                // }
+
+                //  corrigindo
+                situation(nomeJogador, bolasJogador, bolasMaquina, r);
+
+
+                printf("\n");
+                printf("Numero de bolas do jogador: %d \n\n", bolasJogador);
+
+
             }    
                 break;
         }
-        printf("MAXIMO DE %d VEZEZ\n", bolasJogador); // Caso for selecionado um numero maior do que o possuido
+        printf("MAXIMO DE %d VEZEZ\n", bolasJogador);
+        // criaSpec();
+        // criaPos(pos, bolasBuraco);
+        // limparTerminal();
     }
+    // return 0;
 }
 
 void maquinaJoga(){
 
-    for(int i=0;i<bolasMaquina;i++){
+        for(int i=0;i<bolasMaquina;i++){
+            // sleep(1);          // delay de 1 segundo para a maquina
             
-        // sleep(1);          // delay de 1 segundo para a maquina
-
-        int r = rolar_dado();    //rolagem de dados
-        
-        // verifica de acordo com a posição se devera recolher ou adicionar da posição, definindo se aumentara a quantidade de bolas carregadas ou não
-        if(r>=1 && r<=5){
-            if(pos[r-1] == 1){
-                bolasMaquina++;
-                pos[r-1] = 0;
-            } else {
-                pos[r-1] = 1;
+            int r = rolar_dado();
+            if(r>=1 && r<=5){
+                if(pos[r-1] == 1){
+                    bolasMaquina++;
+                    pos[r-1] = 0;
+                } else {
+                    pos[r-1] = 1;
+                    bolasMaquina--;
+                }
+            } else if(r==6){
+                bolasBuraco++;
                 bolasMaquina--;
             }
-        } else if(r==6){
-            bolasBuraco++;
-            bolasMaquina--;
-        }
 
-        limparTerminal();        // Limpa o terminal para ser impresso o jogo
-        criaSpec();              // Escreve em ASCII o nome do jogo
-        criaPos(pos, bolasBuraco); // Desenha a situação das posições
-        situation(nomeJogador, bolasJogador, bolasMaquina, r); // mostra o valor do dado, seu nome e a quantidade de bolas possuidas
-        
-    }    
+            limparTerminal();
+            criaSpec();
+            criaPos(pos, bolasBuraco);
+            situation(nomeJogador, bolasJogador, bolasMaquina, r);
+            
+            printf("Resultado do dado: %d\n",r);
+            for (int i = 0; i < 5; i++) {
+                printf("%d", pos[i]);
+            }
+                printf("\n");
+            // printf("\n");
+            // printf("Numero de bolas do jogador: %d \n\n", bolasJogador);
+        }    
+            // break;
+    // }
+        // printf("MENOR QUE %d VEZEZ\n", bolasJogador);
+        // criaSpec();
+        // criaPos(pos, bolasBuraco);
+        // // limparTerminal();
 }
 
-
-// Funão que completa o nome com " "/espaço para caber em certos lugares
 void completa(char n[10]) {
     int tam = strlen(n);
     while (tam<10) {
@@ -234,6 +267,12 @@ void completa(char n[10]) {
     n[tam] = '\0';
 }
 
+void troca(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
 void roboGanha(char *nomeJogador, int pontuacao) {
     limparTerminal();
 
@@ -242,53 +281,60 @@ void roboGanha(char *nomeJogador, int pontuacao) {
     char nomes[100][10];
     int pontuacoes[100];
 
-    int valTab[8] = {0};      // Valores dos players salvos
-    char nomeTab[8][10] = {{0}}; // Nome dos players salvos
+    // Arrays para armazenar os 8 menores scores e seus nomes correspondentes
+    int praTabela[8] = {0};
+    char nomeTab[8][10] = {{0}};
 
-    myFile = fopen("tabela.txt", "r"); //abrindo arquivo pra LEITURA
+    myFile = fopen("tabela.txt", "r");
 
     if (!myFile) { //caso nao abrir
         printf("Erro ao abrir o arquivo.\n");
         return;
     }
 
-    // le e armazena os dados para depois selecionar os 8 menores
+    //le e armazena os dados para depois selecionar os 8 menores
     while (fscanf(myFile, "%s %d", nomes[i], &pontuacoes[i]) != EOF && i < 100) { // Número máximo de jogadores 100
         
-        // armazena os 8 menoes        
+        //armazena os 8 menoes        
         for (int j = 0; j < 8; j++) {
-            if (valTab[j] == 0 || pontuacoes[i] < valTab[j]) {
-                // desloca pra frente
+            if (praTabela[j] == 0 || pontuacoes[i] < praTabela[j]) {
+                //desloca pra frente
                 for (int k = 7; k > j; k--) {
-                    valTab[k] = valTab[k - 1];
+                    praTabela[k] = praTabela[k - 1];
                     strcpy(nomeTab[k], nomeTab[k - 1]);
                 }
-                // adiciona a informação pro j atual
-                valTab[j] = pontuacoes[i];
+                //adiciona a informação pro j atual
+                praTabela[j] = pontuacoes[i];
                 strcpy(nomeTab[j], nomes[i]);
                 break;
             }
         }
+        
         i++;
     }
     
+
     fclose(myFile);
 
-    printf(" _________________________________________________________________    ___________________________________________________\n");
-    printf("|                _             _                    _             |  |  1->  %-10s: %02d   |  2->  %-10s: %02d     |\n", nomeTab[0], valTab[0], nomeTab[1], valTab[1]);
-    printf("|               | |           | |                  (_)            |  |________________________|__________________________|\n");
-    printf("|   _ __   ___  | |__    ___  | |_     __      __ _  _ __   ___   |  |  3->  %-10s: %02d   |  4->  %-10s: %02d     |\n", nomeTab[2], valTab[2], nomeTab[3], valTab[3]);
-    printf("|  | '__| / _ \\ | '_ \\  / _ \\ | __|    \\ \\ /\\ / /| || '_ \\ / __|  |  |________________________|__________________________|\n");
-    printf("|  | |   | (_) || |_) || (_) || |_      \\ V  V / | || | | |\\__ \\  |  |  5->  %-10s: %02d   |  6->  %-10s: %02d     |\n", nomeTab[4], valTab[4],nomeTab[5], valTab[5]);
-    printf("|  |_|    \\___/ |_.__/  \\___/  \\__|      \\_/\\_/  |_||_| |_||___/  |  |________________________|__________________________|\n");
-    printf("|_________________________________________________________________|  |  7->  %-10s: %02d   |  8->  %-10s: %02d     |\n", nomeTab[6], valTab[6], nomeTab[7], valTab[7]);
-    printf(" _________________________________________________________________   |________________________|__________________________|\n");
-    printf("|                                                                 |  |                                                   |\n");
-    printf("|           Infelizmente %s voce perdeu                   |  |                %s:  %02d                    |\n", nomeJogador, nomeJogador, pontuacao);
-    printf("|_________________________________________________________________|  |___________________________________________________|\n");
+    
+
+    printf(" _________________________________________________________________    _________________________________________\n");
+    printf("|                _             _                    _             |  |  1->  %s: %d          |   2->  %s: %d         |\n", nomeTab[0], praTabela[0], nomeTab[1], praTabela[1]);
+    printf("|               | |           | |                  (_)            |  |___________________|_____________________|\n");
+    printf("|   _ __   ___  | |__    ___  | |_     __      __ _  _ __   ___   |  |  3->  %s: %d        |  4->  %s: %d          |\n", nomeTab[2], praTabela[2], nomeTab[3], praTabela[3]);
+    printf("|  | '__| / _ \\ | '_ \\  / _ \\ | __|    \\ \\ /\\ / /| || '_ \\ / __|  |  |___________________|_____________________|\n");
+    printf("|  | |   | (_) || |_) || (_) || |_      \\ V  V / | || | | |\\__ \\  |  |  5->  %s: %d         |  6->  %s: %d          |\n", nomeTab[4], praTabela[4],nomeTab[5], praTabela[5]);
+    printf("|  |_|    \\___/ |_.__/  \\___/  \\__|      \\_/\\_/  |_||_| |_||___/  |  |___________________|_____________________|\n");
+    printf("|_________________________________________________________________|  |  7->  %s: %d        |  8->  %s: %d         |\n", nomeTab[6], praTabela[6], nomeTab[7], praTabela[7]);
+    printf(" _________________________________________________________________   |___________________|_____________________|\n");
+    printf("|                                                                 |  |                                         |\n");
+    printf("|           Infelizmente %s voce perdeu                   |  |           %s: %d              |\n", nomeJogador, nomeJogador, pontuacao);
+    printf("|_________________________________________________________________|  |_________________________________________|\n");
 }
 
 void jogadorGanha(char *nomeJogador, int pontuacao){
+
+            
     limparTerminal();
 
     FILE *myFile;
@@ -296,18 +342,20 @@ void jogadorGanha(char *nomeJogador, int pontuacao){
     char nomes[100][10];
     int pontuacoes[100];
 
-    int valTab[8] = {0};      // Valores dos players salvos
-    char nomeTab[8][10] = {{0}}; // Nome dos players salvos
+    int praTabela[8] = {0};
+    char nomeTab[8][10] = {{0}};
 
-    myFile = fopen("tabela.txt", "a"); //abrindo arquivo pra ESCRITA
+    myFile = fopen("tabela.txt", "a"); //abrindo arquivo pra escrita
 
     if (!myFile) {//caso nao abrir
         printf("Erro ao abrir o arquivo.\n");
         return; 
     }
 
-    fprintf(myFile, "\n%s\n %d\n", nomeJogador, pontuacao); // Escrevendo no arquivo
+    fprintf(myFile, "\n%s\n %d\n", nomeJogador, pontuacao);
     fclose(myFile);
+
+    
 
     myFile = fopen("tabela.txt", "r"); //abrindo arquivo pra LEITURA
 
@@ -316,35 +364,47 @@ void jogadorGanha(char *nomeJogador, int pontuacao){
         
         //armazena os 8 menoes        
         for (int j = 0; j < 8; j++) {
-            if (valTab[j] == 0 || pontuacoes[i] < valTab[j]) {
+            if (praTabela[j] == 0 || pontuacoes[i] < praTabela[j]) {
                 //desloca pra frente
                 for (int k = 7; k > j; k--) {
-                    valTab[k] = valTab[k - 1];
+                    praTabela[k] = praTabela[k - 1];
                     strcpy(nomeTab[k], nomeTab[k - 1]);
                 }
                 //adiciona a informação pro j atual
-                valTab[j] = pontuacoes[i];
+                praTabela[j] = pontuacoes[i];
                 strcpy(nomeTab[j], nomes[i]);
                 break;
             }
         }
+        
         i++;
     }
 
+
     fclose(myFile);
 
-    printf(" _________________________________________________________________    ___________________________________________________\n");
-    printf("|     _   _   ___   _   _                     _                   |  |  1->  %-10s: %02d   |  2->  %-10s: %02d     |\n", nomeTab[0], valTab[0], nomeTab[1], valTab[1]);
-    printf("|    | | | | / _ \\ | | | |                   (_)                  |  |________________________|__________________________|\n");
-    printf("|    | |_| || (_) || |_| |        __      __ _  _ __   ___        |  |  3->  %-10s: %02d   |  4->  %-10s: %02d     |\n", nomeTab[2], valTab[2], nomeTab[3], valTab[3]);
-    printf("|     \\__, | \\___/  \\__,_|        \\ \\ /\\ / /| || '_ \\ /  __|      |  |________________________|__________________________|\n");
-    printf("|      __/ |                       \\ V  V / | || | | |\\__ \\       |  |  5->  %-10s: %02d   |  6->  %-10s: %02d     |\n", nomeTab[4], valTab[4],nomeTab[5], valTab[5]);
-    printf("|     |___/                         \\_/\\_/  |_||_| |_||___/       |  |________________________|__________________________|\n");
-    printf("|_________________________________________________________________|  |  7->  %-10s: %02d   |  8->  %-10s: %02d     |\n", nomeTab[6], valTab[6], nomeTab[7], valTab[7]);
-    printf(" _________________________________________________________________   |________________________|__________________________|\n");
-    printf("|                                                                 |  |                                                   |\n");
-    printf("|           Parabens %s!       voce ganhou                |  |                %s:  %02d                    |\n", nomeJogador, nomeJogador, pontuacao);
-    printf("|_________________________________________________________________|  |___________________________________________________|\n");
+    // imprimi os 8 menores
+    printf("\n8 menores scores:\n");
+    for (int j = 0; j < 8; j++) {
+        // if (praTabela[j] != 0) {
+            printf("nome: %s, pontuacao: %d\n", nomeTab[j], praTabela[j]);
+        // }
+    }
+
+    printf(" _________________________________________________________________    _________________________________________\n");
+    printf("|     _   _   ___   _   _                     _                   |  |  1->  %s: %02d      |   2->  %s: %02d     |\n", nomeTab[0], praTabela[0], nomeTab[1], praTabela[1]);
+    printf("|    | | | | / _ \\ | | | |                   (_)                  |  |___________________|_____________________|\n");
+    printf("|    | |_| || (_) || |_| |        __      __ _  _ __   ___        |  |  3->  %s: %02d      |  4->  %s: %02d      |\n", nomeTab[2], praTabela[2], nomeTab[3], praTabela[3]);
+    printf("|     \\__, | \\___/  \\__,_|        \\ \\ /\\ / /| || '_ \\ /  __|      |  |___________________|_____________________|\n");
+    printf("|      __/ |                       \\ V  V / | || | | |\\__ \\       |  |  5->  %s: %02d      |  6->  %s: %02d        |\n", nomeTab[4], praTabela[4],nomeTab[5], praTabela[5]);
+    printf("|     |___/                         \\_/\\_/  |_||_| |_||___/       |  |___________________|_____________________|\n");
+    printf("|_________________________________________________________________|  |  7->  %s: %02d       |  8->  %s: %02d         |\n", nomeTab[6], praTabela[6], nomeTab[7], praTabela[7]);
+    printf(" _________________________________________________________________   |___________________|_____________________|\n");
+    printf("|                                                                 |  |                                         |\n");
+    printf("|           Parabens %s!       voce ganhou                |  |           %s:  %02d               |\n", nomeJogador, nomeJogador, pontuacao);
+    printf("|_________________________________________________________________|  |_________________________________________|\n");
+    // printf("%d",pontuacao);
+
 
 }
 
@@ -352,25 +412,25 @@ int main(){
     srand(time(NULL));
     pontuacao = 0;
 
-    // Questiona sobre o nome e adapta o tamanho
-    printf("Digite seu nome ate 10 caracteres\n");
+    printf("Qual seu nome?");
     scanf("%s",nomeJogador);
     completa(nomeJogador);
     
-    // Verificação para ver se o jogo continua   
+
     while(bolasJogador != 0 && bolasMaquina != 0){
+        
         jogadorJoga(nomeJogador);
-            pontuacao++;
         if (bolasJogador != 0){
-            maquinaJoga(pontuacao);
+            pontuacao++;
+            maquinaJoga();
         }
     }
-    // Verifica quem ganhou e executa a função para cada caso
+
     if (bolasJogador == 0){
         jogadorGanha(nomeJogador, pontuacao);
     } else {
         roboGanha(nomeJogador, pontuacao);
     }
-
+    
     return 0;
 }
