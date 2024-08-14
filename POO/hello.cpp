@@ -1,12 +1,22 @@
 #include <iostream>
+#include <iomanip>
 
-// using std::cout;
 using namespace std;
 
 
 int main(){
+    
+    string nome;
 
-    cout << "Hello World!" << endl;
+    double A, B, C;
+    
+    cin >> nome;
+    cin >> A;
+    cin >> B;
+    
+    C = A+(0.15*B);
 
+    cout << "TOTAL = R$ "<<fixed<<setprecision(2) << C <<endl;
+         
     return 0;
 }
