@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/raulcostasoares/Desktop/Facul/ALEST/output/bubble_sort'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _bubble_sort, symObjAddr: 0x0, symBinAddr: 0x100003C0C, symSize: 0xE4 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _bubble_sort, symObjAddr: 0x0, symBinAddr: 0x100003C0C, symSize: 0xE4 }
+  - { offsetInCU: 0xB9, offset: 0xB9, size: 0x8, addend: 0x0, symName: _esta_ordenado, symObjAddr: 0xE4, symBinAddr: 0x100003CF0, symSize: 0x90 }
+  - { offsetInCU: 0x10B, offset: 0x10B, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x174, symBinAddr: 0x100003D80, symSize: 0x1E8 }
+...
