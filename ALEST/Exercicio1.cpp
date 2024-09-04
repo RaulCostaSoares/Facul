@@ -8,7 +8,6 @@ using namespace std;
 /////////////////////
 
 void quickSort(int *dados, int ini, int fim){
-
     int i, j, pivo, aux;
 
     i = ini;
