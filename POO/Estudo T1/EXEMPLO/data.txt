@@ -1,3 +1,0 @@
-Alice 25 Desenvolvedor
-Bob 30 Designer
-Charlie 22 Testador
