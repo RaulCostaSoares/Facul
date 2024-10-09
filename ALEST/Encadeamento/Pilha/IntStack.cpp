@@ -29,7 +29,23 @@ bool IntStack::pop(int &e) {
         e = stack[--numE];
         return true;
     }
-
-
-
+}
+bool IntStack::top(int &e) const {
+    if(numE == 0){ return false;
+    } else {
+        e = stack[numE - 1];
+        return true;
+    }
+}
+string IntStack::str() const {
+    int i;
+    stringstream ss;
+    ss << "|";
+    for(i=0;i<numE;i++){
+        ss<<stack[i]<<"|";
+    }
+    for(;i<maxE;i++){
+        ss<<" |";
+    }
+    return ss.str();
 }

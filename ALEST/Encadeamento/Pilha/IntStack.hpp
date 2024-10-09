@@ -21,7 +21,7 @@ class IntStack{
         bool push(const int e);  
         bool pop(int &e);
         bool top(int &e) const;
-        string srt() const;
+        string str() const;
 };
 
 #endif

@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "new": "cpp",
+        "__bit_reference": "cpp",
+        "__config": "cpp",
+        "__verbose_abort": "cpp",
+        "algorithm": "cpp",
+        "memory_resource": "cpp",
+        "iterator": "cpp",
+        "locale": "cpp",
+        "memory": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp"
+    }
+}
