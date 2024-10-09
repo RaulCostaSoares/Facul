@@ -12,6 +12,7 @@
         "string": "cpp",
         "string_view": "cpp",
         "tuple": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "variant": "cpp"
     }
 }
