@@ -13,6 +13,7 @@
         "string_view": "cpp",
         "tuple": "cpp",
         "utility": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "sstream": "cpp"
     }
 }
