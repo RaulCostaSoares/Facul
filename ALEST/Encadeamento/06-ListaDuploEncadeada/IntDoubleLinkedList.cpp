@@ -186,7 +186,7 @@ string IntDoubleLinkedList::str() const {
     stringstream ss;
     ss<<"|";
     for(Node *aux = head; aux!=nullptr;aux = aux->next){
-        ss<<aux->info<<"|";
+        // ss<<aux->info<<"|";
     }
     return ss.str();
 }
