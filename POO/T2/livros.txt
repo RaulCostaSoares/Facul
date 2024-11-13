@@ -1,0 +1,10 @@
+HarryPotter autor_fantasia fantasia 1997 120000000
+OrgulhoEPreconceito Jane_Austen romance 1813 20000000
+OGrandeGatsby F_Scott_Fitzgerald classico 1925 25000000
+MobyDick Herman_Melville aventura 1851 5000000
+SenhorDosAneis JRR_Tolkien fantasia 1954 150000000
+CemAnosDeSolidão Gabriel_Garcia_Marquez ficcao 1967 30000000
+DonQuixote Miguel_de_Cervantes classico 1605 50000000
+OApanhadorNoCampoDeCenteio JD_Salinger romance 1951 65000000
+AliceNoPaisDasMaravilhas Lewis_Carroll fantasia 1865 10000000
+ToKillAMockingbird Harper_Lee drama 1960 40000000

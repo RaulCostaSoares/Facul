@@ -1,11 +1,30 @@
-// main.cpp
 #include <iostream>
 #include <vector>
 #include <algorithm>
 #include <map>
+#include <fstream>
 #include "Livro.hpp"
 
-// Função para exibir os livros em formato de tabela
+std::vector<Livro> carregarLivros(const std::string& nomeArquivo) {
+    std::vector<Livro> livros;
+    std::ifstream arquivo(nomeArquivo);
+    
+    if (!arquivo.is_open()) {
+        std::cerr << "Erro ao abrir o arquivo: " << nomeArquivo << "\n";
+        return livros;
+    }
+
+    std::string titulo, autor, genero;
+    int anoPublicacao, vendas;
+
+    while (arquivo >> titulo >> autor >> genero >> anoPublicacao >> vendas) {
+        livros.emplace_back(titulo, autor, genero, anoPublicacao, vendas);
+    }
+
+    arquivo.close();
+    return livros;
+}
+
 void exibirTabela(const std::vector<Livro>& livros) {
     std::cout << "Titulo | Autor | Genero | Ano Publicacao | Vendas\n";
     for (const auto& livro : livros) {
@@ -17,7 +36,6 @@ void exibirTabela(const std::vector<Livro>& livros) {
     }
 }
 
-// Função para encontrar o livro mais vendido
 void livroMaisVendido(const std::vector<Livro>& livros) {
     auto it = std::max_element(livros.begin(), livros.end(), 
                                [](const Livro& a, const Livro& b) { return a.getVendas() < b.getVendas(); });
@@ -26,7 +44,6 @@ void livroMaisVendido(const std::vector<Livro>& livros) {
     }
 }
 
-// Função para contar autores com múltiplos livros
 void autoresComMaisDeUmLivro(const std::vector<Livro>& livros) {
     std::map<std::string, int> contagemAutores;
     for (const auto& livro : livros) {
@@ -40,22 +57,33 @@ void autoresComMaisDeUmLivro(const std::vector<Livro>& livros) {
     }
 }
 
-int main() {
-    // Exemplo de livros para testar
-    std::vector<Livro> livros = {
-        Livro("Livro A", "Autor X", "Ficcao", 2020, 5000),
-        Livro("Livro B", "Autor Y", "Romance", 2018, 7500),
-        Livro("Livro C", "Autor X", "Ficcao", 2021, 6000),
-        Livro("Livro D", "Autor Z", "Suspense", 2015, 4500),
-        Livro("Livro E", "Autor Y", "Romance", 2019, 3200)
-    };
+void generoMaisPopular(const std::vector<Livro>& livros) {
+    std::map<std::string, int> contagemGeneros;
+    for (const auto& livro : livros) {
+        contagemGeneros[livro.getGenero()]++;
+    }
+    auto it = std::max_element(contagemGeneros.begin(), contagemGeneros.end(), 
+                               [](const std::pair<const std::string, int>& a, const std::pair<const std::string, int>& b) { 
+                                   return a.second < b.second; 
+                               });
+    if (it != contagemGeneros.end()) {
+        std::cout << "Gênero mais popular: " << it->first << " com " << it->second << " livros.\n";
+    }
+}
 
-    // Exibe tabela
+int main() {
+    std::vector<Livro> livros = carregarLivros("livros.txt");
+
+    if (livros.empty()) {
+        std::cerr << "Nenhum livro encontrado no arquivo.\n";
+        return 1;
+    }
+
     exibirTabela(livros);
 
-    // Responde perguntas
     livroMaisVendido(livros);
     autoresComMaisDeUmLivro(livros);
+    generoMaisPopular(livros);
 
     return 0;
 }

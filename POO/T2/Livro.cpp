@@ -1,18 +1,19 @@
-// Livro.cpp
 #include "Livro.hpp"
 
-Livro::Livro(const std::string& titulo, const std::string& autor, const std::string& genero, int anoPublicacao, int vendas)
+using namespace std;
+
+Livro::Livro(const string& titulo, const string& autor, const string& genero, int anoPublicacao, int vendas)
     : titulo(titulo), autor(autor), genero(genero), anoPublicacao(anoPublicacao), vendas(vendas) {}
 
-std::string Livro::getTitulo() const {
+string Livro::getTitulo() const {
     return titulo;
 }
 
-std::string Livro::getAutor() const {
+string Livro::getAutor() const {
     return autor;
 }
 
-std::string Livro::getGenero() const {
+string Livro::getGenero() const {
     return genero;
 }
 
