@@ -35,7 +35,7 @@ int NodeCharTree::depth() const {
     return res;
 }
 
-int NodeCharTree::height(Node *subtree) const {
+int NodeCharTree::height(NodeCharTree *subtree) const {
     if(subtree)
 
 }
