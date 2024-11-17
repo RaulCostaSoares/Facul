@@ -6,7 +6,6 @@
 #include "../HPPS/File_manage.hpp"
 
 using namespace std;
-// funcao que le as informacoes do arquivo e as coloca em uma list STL
 
 list<Obras> ReadInfo()
 {
@@ -15,7 +14,7 @@ list<Obras> ReadInfo()
     list<Obras> lista; // lista para retornar os objetos lidos
 
     ifstream infile; 
-    infile.open("../TXTS/Data_bank.txt"); // abre o arquivo data_bank.txt 
+    infile.open("TXTS/Data_bank.txt"); // abre o arquivo data_bank.txt 
 
     if (!infile)
     { 
