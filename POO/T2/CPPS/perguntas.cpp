@@ -37,7 +37,6 @@ string livroOuFilme(list<Obras> lista)
     else
         return "filmes";
 }
-
 string Subgenero(list<Obras> lista)
 {
     list<Obras>::iterator it = lista.begin(); // iterador que aponta para o inicio da lista
@@ -50,9 +49,9 @@ string Subgenero(list<Obras> lista)
         ++it;
     }
 
-    // frequencia de cada genero
-    for (list<string>::iterator subIt = subgeneros.begin(); subIt != subgeneros.end(); ++subIt)
-    {
+        // frequencia de cada genero
+        for (list<string>::iterator subIt = subgeneros.begin(); subIt != subgeneros.end(); ++subIt)
+        {
         int freq = count(subgeneros.begin(), subgeneros.end(), *subIt);
         if (freq > maxFreq){
             maxFreq = freq;
@@ -65,4 +64,19 @@ string Subgenero(list<Obras> lista)
     }
 
     return "Nenhum subgênero encontrado."; // erro
+}
+string nemFilmesNemLivros(list<Obras> lista){
+
+    string res = "";
+    
+    for (list<Obras>::iterator it = lista.begin(); it != lista.end(); ++it){
+        if (it->getAutor() != "Filme" && it->getAutor() != "Livro"){
+            res += "Obra: " + it->getTitulo() + " Tipo: " + it->getAutor() + "\n";
+        }
+    }
+    if (res.empty()) {
+        return "Nenhuma obra que nao seja filme nem livro."; // erro
+    }
+
+    return res;
 }
