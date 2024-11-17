@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <list>
-#include <algorithm>  // Para count
 #include "../HPPS/Obras.hpp"
 #include "../HPPS/perguntas.hpp"
 
@@ -39,7 +38,7 @@ string livroOuFilme(list<Obras> lista)
         return "filmes";
 }
 
-string livrosESubgenero(list<Obras> lista)
+string Subgenero(list<Obras> lista)
 {
     list<Obras>::iterator it = lista.begin(); // iterador que aponta para o inicio da lista
     string subgeneroMaisFrequente;
@@ -47,7 +46,7 @@ string livrosESubgenero(list<Obras> lista)
     list<string> subgeneros;
 
     while (it != lista.end()){
-        subgeneros.push_back(it->getMidia());
+        subgeneros.push_back(it->getsubGenero());
         ++it;
     }
 

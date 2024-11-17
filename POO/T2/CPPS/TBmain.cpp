@@ -33,7 +33,7 @@ int main()
                 cout << "Há mais " << livroOuFilme(lista) << " nesta lista." << endl;
             break;
         case 3:
-                cout << " " << livrosESubgenero(lista) << endl<<endl;
+                cout << " " << Subgenero(lista) << endl<<endl;
             break;
         case 4:
                 cout << " caso 4" << endl;
