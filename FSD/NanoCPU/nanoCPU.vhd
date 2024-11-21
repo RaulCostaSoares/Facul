@@ -52,7 +52,7 @@ end NanoCPU;
 
 architecture NCPU of NanoCPU is
 
-    type instType is (iREAD, iWRITE, iJMP, iBRANCH, iXOR, iSUB, iADD, iLESS, iEND);
+    type instType is (iREAD, iWRITE, iJMP, iBRANCH, iXOR, iSUB, iADD, iLESS, iEND, iALU);
     signal inst: instType;   
 
     type bankType is array(0 to 3) of std_logic_vector(15 downto 0);
@@ -64,7 +64,7 @@ architecture NCPU of NanoCPU is
 
     signal IR, RS1, RS2, muxRegIn, outalu, muxPC, PC, less: std_logic_vector(15 downto 0);
 
-   type stateType is (sFETCH, sEXE, sREAD, sWRITE, sEND); --complete
+   type stateType is (sFETCH, sEXE, sREAD, sWRITE, sEND, sALU); --complete
     signal state: stateType;
 
 begin
@@ -105,7 +105,9 @@ begin
    -- arithmetic and logic unit 
    -- 
 	outalu <=	RS2           when inst = iWRITE else  -- data to be written is the second register
-				--complete
+				RS1 XOR RS2   when inst = iXOR   else
+				RS1 - RS2     when inst = iSUB   else
+				less          when inst = iLESS  else
 				RS1 + RS2;    --  default operation: iADD
 
 	less <= x"0001" when RS1 < RS2 else x"0000";
@@ -122,13 +124,19 @@ begin
    -- control block  - manages the execution of instructions
    --++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-	inst <=	iREAD      when ir(15 downto 12) = x"0" else    -- decode the current instruction
-			--complete
+	inst <=	iREAD      when ir(15 downto 12) = x"0" else
+			iWrite	   when ir(15 downto 12) = x"1" else
+			iJMP  	   when ir(15 downto 12) = x"2" else
+			iBRANCH    when ir(15 downto 12) = x"3" else
+			iXOR       when ir(15 downto 12) = x"4" else
+			iSUB       when ir(15 downto 12) = x"5" else
+			iADD       when ir(15 downto 12) = x"6" else
+			iLESS      when ir(15 downto 12) = x"7" else
 			iEND;
 
-	wPC <= '1' when state = sREAD --complete
+	wPC <= '1' when state = sREAD or state = sALU or state = sWRITE
 		else '0';
-	wReg <= '1' when state = sREAD  --complete
+	wReg <= '1' when state = sREAD or state = sALU
 		else '0';
 	wIR <= '1' when state = sFETCH else '0';
 
@@ -141,10 +149,14 @@ begin
 				when sFETCH =>
 					state <= sEXE;
 				when sEXE =>
-					if inst = iREAD then
-						state <= sREAD;
-					else
+					if inst = iEND then
 						state <= sEND;
+					elsif inst = iREAD then
+						state <= sREAD;	
+					elsif inst <= iALU then
+						state <= sALU;
+					elsif inst <= iWRITE then
+						state <= sWRITE;
 					end if;
 				when sEND =>
 					state <= sEND;
