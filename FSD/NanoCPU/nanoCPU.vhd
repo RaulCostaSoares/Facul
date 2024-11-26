@@ -52,7 +52,7 @@ end NanoCPU;
 
 architecture NCPU of NanoCPU is
 
-    type instType is (iREAD, iWRITE, iJMP, iBRANCH, iXOR, iSUB, iADD, iLESS, iEND, iALU);
+    type instType is (iREAD, iWRITE, iJMP, iBRANCH, iXOR, iSUB, iADD, iLESS, iEND, iALU, iINC, iDEC);
     signal inst: instType;   
 
     type bankType is array(0 to 3) of std_logic_vector(15 downto 0);
@@ -64,7 +64,7 @@ architecture NCPU of NanoCPU is
 
     signal IR, RS1, RS2, muxRegIn, outalu, muxPC, PC, less: std_logic_vector(15 downto 0);
 
-   type stateType is (sFETCH, sEXE, sREAD, sWRITE, sEND, sALU); --complete
+   type stateType is (sFETCH, sEXE, sREAD, sWRITE, sEND, sALU, sJMP, sBRANCH); --complete
     signal state: stateType;
 
 begin
@@ -108,6 +108,8 @@ begin
 				RS1 XOR RS2   when inst = iXOR   else
 				RS1 - RS2     when inst = iSUB   else
 				less          when inst = iLESS  else
+				RS1 + 1	 	  when inst = iINC   else
+				RS1 - 1    	  when inst = iDEC   else
 				RS1 + RS2;    --  default operation: iADD
 
 	less <= x"0001" when RS1 < RS2 else x"0000";
@@ -117,7 +119,7 @@ begin
 	R_IR: entity work.Reg16bit port map(ck => ck, rst => rst, we => wIR, D => dataR, Q => IR);
 	R_PC: entity work.Reg16bit port map(ck => ck, rst => rst, we => wPC, D => muxPC, Q => PC);
 
-	muxPC <=  -- complete according to the jump conditions
+	muxPC <=  x"00" & ir(11 downto 4) when state = sJMP or (state = sBRANCH and RS2(0) = '1') else 
 				PC + 1;
 
    --++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -125,16 +127,18 @@ begin
    --++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 	inst <=	iREAD      when ir(15 downto 12) = x"0" else
-			iWrite	   when ir(15 downto 12) = x"1" else
+			iWRITE	   when ir(15 downto 12) = x"1" else
 			iJMP  	   when ir(15 downto 12) = x"2" else
 			iBRANCH    when ir(15 downto 12) = x"3" else
 			iXOR       when ir(15 downto 12) = x"4" else
 			iSUB       when ir(15 downto 12) = x"5" else
 			iADD       when ir(15 downto 12) = x"6" else
 			iLESS      when ir(15 downto 12) = x"7" else
+			iINC 	   when ir(15 downto 12) = x"8" else
+			iDEC 	   when ir(15 downto 12) = x"9" else
 			iEND;
 
-	wPC <= '1' when state = sREAD or state = sALU or state = sWRITE
+	wPC <= '1' when state = sREAD or state = sALU or state = sWRITE or state = sJMP or state = sBRANCH
 		else '0';
 	wReg <= '1' when state = sREAD or state = sALU
 		else '0';
@@ -152,11 +156,14 @@ begin
 					if inst = iEND then
 						state <= sEND;
 					elsif inst = iREAD then
-						state <= sREAD;	
-					elsif inst <= iALU then
-						state <= sALU;
+						state <= sREAD;
 					elsif inst <= iWRITE then
 						state <= sWRITE;
+					elsif inst <= iJMP then
+						state <= sJMP;
+					elsif inst <= iBRANCH then
+						state <= sBRANCH;
+					else state <= sALU;
 					end if;
 				when sEND =>
 					state <= sEND;
