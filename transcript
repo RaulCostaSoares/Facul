@@ -1,0 +1,1392 @@
+# //  ModelSim SE-64 2021.3 Jul 13 2021 Linux 6.1.0-29-amd64
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+ls
+# ATIVIDADE 2
+# heapsort.c
+# Primeiro Semetre.zip
+# Segundo Semestre.zip
+# transcript
+cd ATIVIDADE 2
+# wrong # args: should be "cd ?dirName?"
+cd ATIVIDADE 2
+# wrong # args: should be "cd ?dirName?"
+cd ATIVIDADE_2
+ls
+# mux.vhd
+# sim.do
+# tb_mux.vhd
+# wave.do
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Copying /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:05:15 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# ** Error: (vcom-7) Failed to open design unit file "dec.vhd" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 09:05:15 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:05:33 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# ** Error: dec.vhd(7): near ")": (vcom-1576) expecting IDENTIFIER.
+# ** Note: dec.vhd(7): VHDL Compiler exiting
+# End time: 09:05:33 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:06:00 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(13): Illegal concurrent statement.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(32): near "architecture": (vcom-1576) expecting CASE.
+# End time: 09:06:00 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 98, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:07:23 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(13): Illegal concurrent statement.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error (suppressible): dec.vhd(13): (vcom-1339) Case statement choices cover only 16 out of 6561 cases.
+# ** Note: dec.vhd(32): VHDL Compiler exiting
+# End time: 09:07:24 on Mar 21,2025, Elapsed time: 0:00:01
+# Errors: 98, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:07:45 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(13): Illegal concurrent statement.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): near "data": (vcom-1576) expecting CASE.
+# ** Note: dec.vhd(32): VHDL Compiler exiting
+# End time: 09:07:45 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 98, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:09:31 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(13): Illegal concurrent statement.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error (suppressible): dec.vhd(13): (vcom-1339) Case statement choices cover only 16 out of 6561 cases.
+# ** Note: dec.vhd(32): VHDL Compiler exiting
+# End time: 09:09:31 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 98, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:11:01 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(15): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error (suppressible): dec.vhd(13): (vcom-1339) Case statement choices cover only 16 out of 6561 cases.
+# ** Note: dec.vhd(33): VHDL Compiler exiting
+# End time: 09:11:01 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 97, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:11:40 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error (suppressible): dec.vhd(14): (vcom-1339) Case statement choices cover only 16 out of 6561 cases.
+# ** Note: dec.vhd(34): VHDL Compiler exiting
+# End time: 09:11:40 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 97, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:12:29 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(16): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error (suppressible): dec.vhd(14): (vcom-1339) Case statement choices cover only 16 out of 6561 cases.
+# ** Note: dec.vhd(34): VHDL Compiler exiting
+# End time: 09:12:30 on Mar 21,2025, Elapsed time: 0:00:01
+# Errors: 92, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:12:56 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error (suppressible): dec.vhd(14): (vcom-1339) Case statement choices cover only 16 out of 6561 cases.
+# ** Note: dec.vhd(34): VHDL Compiler exiting
+# End time: 09:12:56 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 96, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:13:16 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(18): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(19): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(20): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(21): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(22): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(23): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(24): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(25): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(26): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(27): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(28): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(29): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(30): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(31): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error (suppressible): dec.vhd(14): (vcom-1339) Case statement choices cover only 16 out of 6561 cases.
+# ** Note: dec.vhd(34): VHDL Compiler exiting
+# End time: 09:13:16 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 91, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:14:43 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error (suppressible): dec.vhd(14): (vcom-1339) Case statement choices cover only 16 out of 6561 cases.
+# ** Note: dec.vhd(34): VHDL Compiler exiting
+# End time: 09:14:44 on Mar 21,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:18:02 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): near "else": (vcom-1576) expecting ';'.
+# ** Error (suppressible): dec.vhd(14): (vcom-1339) Case statement choices cover only 1 out of 6561 cases.
+# ** Note: dec.vhd(35): VHDL Compiler exiting
+# End time: 09:18:02 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:18:24 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): near "else": (vcom-1576) expecting ';'.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(17): near "else": (vcom-1576) expecting ';'.
+# ** Error (suppressible): dec.vhd(14): (vcom-1339) Case statement choices cover only 2 out of 6561 cases.
+# ** Note: dec.vhd(35): VHDL Compiler exiting
+# End time: 09:18:24 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 15, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:18:54 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): Type error resolving infix expression "<=" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: dec.vhd(16): near "else": (vcom-1576) expecting END or WHEN.
+# ** Note: dec.vhd(34): VHDL Compiler exiting
+# End time: 09:18:54 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:21:11 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(17): (vcom-1581) No feasible entries for prefix operator '??'.
+# ** Error: dec.vhd(17): Type error resolving prefix expression "??" as type std.STANDARD.BOOLEAN.
+# ** Error: dec.vhd(17): near "=>": (vcom-1576) expecting ';'.
+# ** Error (suppressible): dec.vhd(14): (vcom-1339) Case statement choices cover only 1 out of 6561 cases.
+# ** Note: dec.vhd(35): VHDL Compiler exiting
+# End time: 09:21:11 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:29:58 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(16): near "elsif": (vcom-1576) expecting END.
+# ** Note: dec.vhd(33): VHDL Compiler exiting
+# End time: 09:29:58 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:31:40 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(16): near "elsif": (vcom-1576) expecting END.
+# ** Note: dec.vhd(33): VHDL Compiler exiting
+# End time: 09:31:40 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:32:16 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(16): near "elsif": (vcom-1576) expecting END.
+# ** Note: dec.vhd(16): VHDL Compiler exiting
+# End time: 09:32:16 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:32:29 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(16): near "elsif": (vcom-1576) expecting END.
+# ** Note: dec.vhd(17): VHDL Compiler exiting
+# End time: 09:32:29 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:33:17 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(16): near "elsif": (vcom-1576) expecting END.
+# ** Note: dec.vhd(33): VHDL Compiler exiting
+# End time: 09:33:17 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:33:29 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(16): near "elsif": (vcom-1576) expecting END.
+# ** Note: dec.vhd(17): VHDL Compiler exiting
+# End time: 09:33:29 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
+do sim.do -do
+# Model Technology ModelSim SE-64 vmap 2021.3 Lib Mapping Utility 2021.07 Jul 13 2021
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 09:33:35 on Mar 21,2025
+# vcom -reportprogress 300 -work work -2008 -explicit dec.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec
+# -- Compiling architecture meu_dec of dec
+# ** Error: dec.vhd(16): near "elsif": (vcom-1576) expecting END.
+# ** Note: dec.vhd(17): VHDL Compiler exiting
+# End time: 09:33:35 on Mar 21,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+# Error in macro ./sim.do line 4
+# /soft64/mentor/ferramentas/modelsim/2021/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -work work -2008 -explicit dec.vhd"
