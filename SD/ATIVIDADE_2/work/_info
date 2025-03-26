@@ -1,32 +1,138 @@
 m255
 K4
 z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11e vcom 2021.3 2021.07, Jul 13 2021
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/24104884/Desktop/Facul/ATIVIDADE_2
+Z1 d/home/24104884/Desktop/Facul/Facul/SD/ATIVIDADE_2
+T_opt
+!s110 1742914882
+V_YlZP4>Cn]<Og7MU;eU_E0
+Z2 04 6 6 work tb_dec tb_dec 1
+=1-000ae431a4f1-67e2c542-2408-15a1
+Z3 !s124 OEM100
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2021.3;73
+R1
+T_opt1
+!s110 1742987479
+VL4K3@4zi7Ped]JZ?hzSUz0
+R2
+=1-000ae431a4f1-67e3e0d6-d467c-eb7
+R3
+R4
+R5
+n@_opt1
+R6
+R1
+T_opt2
+!s110 1742990739
+V:E95c3URY[Z1P:<X7_SoE0
+R2
+=1-000ae431a4f1-67e3ed93-33b27-1d04
+R3
+R4
+R5
+n@_opt2
+R6
 Edec
-w1742560414
-DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 w1742989997
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 0
-R0
-8dec.vhd
-Fdec.vhd
+R1
+Z10 8dec.vhd
+Z11 Fdec.vhd
 l0
 L4 1
-V^Q>o7X[0Qo_^?D`CQ1i?A2
-!s100 ea__8zakF6a9a1V7]`JFV0
-OL;C;2021.3;73
+VaW7KLgLk0<2WznlEihXE;0
+!s100 @hijdE4X7c6?aFgMa_FRO2
+Z12 OL;C;2021.3;73
 33
-!s110 1742560415
+Z13 !s110 1742990738
 !i10b 1
-!s108 1742560415.000000
-!s90 -reportprogress|300|-work|work|-2008|-explicit|dec.vhd|
-!s107 dec.vhd|
+Z14 !s108 1742990738.000000
+Z15 !s90 -reportprogress|300|-work|work|-2008|-explicit|dec.vhd|
+Z16 !s107 dec.vhd|
 !i113 0
-o-work work -2008 -explicit
-tExplicit 1 CvgOpt 0
+Z17 o-work work -2008 -explicit
+Z18 tExplicit 1 CvgOpt 0
+Ameu_dec
+R8
+R9
+Z19 DEx4 work 3 dec 0 22 aW7KLgLk0<2WznlEihXE;0
+!i122 0
+l14
+L12 31
+V^`dXQB5dY=RLV43FzZZ_N2
+!s100 <COe0B>llZb:8j=W9KaKd2
+R12
+33
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
+Etb_dec
+Z20 w1742990179
+Z21 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R8
+R9
+!i122 1
+R1
+Z22 8tb_dec.vhd
+Z23 Ftb_dec.vhd
+l0
+L7 1
+V[IzI==Ieo=V^:alhQ^K3?1
+!s100 :UjXEjA8dZK5Gi7jdg`PG3
+R12
+33
+R13
+!i10b 1
+R14
+Z24 !s90 -reportprogress|300|-work|work|-2008|-explicit|tb_dec.vhd|
+Z25 !s107 tb_dec.vhd|
+!i113 0
+R17
+R18
+Atb_dec
+R19
+R21
+R8
+R9
+DEx4 work 6 tb_dec 0 22 [IzI==Ieo=V^:alhQ^K3?1
+!i122 1
+l15
+L12 55
+VSZNm2CcciAT<>JUD2V75D3
+!s100 I5J@O>3oWE>hE<C<;Bo@a2
+R12
+33
+R13
+!i10b 1
+R14
+R24
+R25
+!i113 0
+R17
+R18

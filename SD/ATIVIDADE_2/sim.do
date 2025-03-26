@@ -7,4 +7,4 @@ vsim work.tb_dec
 quietly set StdArithNoWarnings 1
 quietly set StdVitalGlitchNoWarnings 1
 do wave.do
-run 1ms
+run 1700ns
